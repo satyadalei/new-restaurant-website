@@ -1,3 +1,4 @@
+// getting all the target elements
 let hamburgerBox = document.getElementById("hamburger-box");
 let navContainer = document.getElementById("nav-container");
 
