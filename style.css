@@ -221,9 +221,9 @@ body {
 /* ===================== FOOD ITEM SECTION ======================= */
 .food-item-main-container{
     width: 100%;
-    height: max-content;
+    height:1300px;
     max-height: max-content;
-    background-color: red;
+    /* background-color: red; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -232,16 +232,17 @@ body {
 }
 .food-item-main-container .food-item-inner-container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
+    /* min-height: 95%; */
     min-height: 95%;
     max-height: fit-content;
     padding: 0.5rem;
-    background-color: cyan;
+    /* background-color: cyan; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr) 50px ;
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
     /* row-gap:5px;
     column-gap: 5px; */
     place-content:center;
@@ -254,7 +255,47 @@ body {
     height: 100%;
     background-color: black;
     place-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding:1rem;
 }
+.food-item div.food-item-img{
+    height: 65%;
+    overflow-y: hidden;
+    background-color: aqua;
+}
+.food-item .food-item-img img{
+  width: 100%;
+  height: 100%;
+}
+.food-item .food-item-description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.food-item .food-item-description h2{
+    color: yellow;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.food-item .food-item-description p{
+    color: yellow !important ;
+    font-size: 1.5rem;
+}
+.food-item .food-item-description .food-veg{
+    color: rgb(17, 240, 17);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.food-item .food-item-description .food-non-veg{
+    color: rgb(240, 50, 17);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.rating-white{
+    color: white  ;
+}
+
 .know-more{
     display: flex;
     align-items: center;
@@ -275,4 +316,10 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+/* =======================Next section==================== */
+.next-section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 123, 0);
 }

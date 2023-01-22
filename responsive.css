@@ -1,11 +1,12 @@
 /* ######################## Above Tablet version(Desktop or laptop version) ======================= */
 @media screen and (min-width:769px){
-    .food-item-main-container{
+    /* .food-item-main-container{
         height: 850px;
-    }
+    } */
     .food-item-main-container .food-item-inner-container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        width: 100%;
     }
 }
 /* ######################## Tablet version (Frame - Apple Ipad Mini)########################### */
@@ -56,11 +57,18 @@
     }
     /* ======= Food Item Container =========== */
     .food-item-main-container{
-        height: 450px;
+        height: 1200px;
     }
     .food-item-main-container .food-item-inner-container{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+    }
+    .food-item .food-item-description h2{
+        font-size: 1.1rem;
+    }
+    .food-item .food-item-description p{
+        font-size: 1.1rem;
     }
     .item7, .item8, .item9{
         display: none;
@@ -164,9 +172,14 @@
     .food-item-main-container .food-item-inner-container{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 0;
+        width: 100%;
     }
     .food-item-main-container{
-        height: 1100px;
+        height: 1300px;
+    }
+    .food-item{
+        height: 95%;
     }
     .item4,.item5, .item6, .item7, .item8, .item9{
         display: none;
